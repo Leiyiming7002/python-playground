@@ -1,4 +1,5 @@
 print("Hello Python! 我的Day1学习开始啦")
+#定义一个变量，存储你的名字、身高、年龄，使用 f-string 打印出来
 name="lerry"
 tall="175cm"
 age="18"

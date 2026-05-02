@@ -13,6 +13,7 @@ total_score=score_english+score_math+score_chinese
 print(f"总成绩是{total_score}")
 name=input("请输入姓名:")
 age=input("请输入年龄：")
+age=int(age)
 major=input("请输入专业：")
 id=input("请输入学号：")
 print("====================")

@@ -81,6 +81,20 @@ while True:
     if guess_chance2 > 5:
         print(f"机会用完了，游戏失败，正确答案是{answer2}")
         break
-#写一个程序，让用户输入一个正整数 n，找出 1 到 n 之间的所有质数，打印出来
-#质数判断规则：一个大于 1 的整数，除了 1 和它本身，不能被其他任何正整数整除，这个数就是质数。
-#提示：用嵌套循环（外层循环遍历 1 到 n 的每个数，内层循环判断这个数是不是质数），结合 break 优化判断逻辑。
+# 写一个程序，让用户输入一个正整数 n，找出 1 到 n 之间的所有质数，打印出来
+# 质数判断规则：一个大于 1 的整数，除了 1 和它本身，不能被其他任何正整数整除，这个数就是质数。
+# 提示：用嵌套循环（外层循环遍历 1 到 n 的每个数，内层循环判断这个数是不是质数），结合 break 优化判断逻辑。
+n = int(input("请输入一个正整数"))
+for num in range(1, n+1):
+	if num <= 1:
+		pass
+	elif num==2:
+		print(f"{num}是素数")
+	else :
+		is_prime =True
+		for i in range (2,num):
+			if num % i == 0:
+				is_prime = False
+				break
+	if is_prime:
+		print(f"{num}是素数")
